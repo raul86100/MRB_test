@@ -1,0 +1,43 @@
+@import "../../style/variable.scss";
+.ant-drawer {
+  .ant-drawer-body {
+    padding: 0px;
+  }
+  .ant-drawer-content {
+    width: fit-content;
+  }
+  .ant-drawer-content-wrapper {
+    box-shadow: none;
+  }
+}
+.userSidebar {
+  display: flex;
+
+  .userLayout {
+    width: calc(100% - 235px);
+    background-color: $backgroundColor;
+
+  }
+  .hiddenSidebar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .userSidebar {
+    display: flex;
+    flex-direction: column;
+    .sidebarSection {
+      display: none;
+    }
+    .hiddenSidebar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 5px 10px;
+    }
+    .userLayout {
+      width: 100%;
+    }
+  }
+}

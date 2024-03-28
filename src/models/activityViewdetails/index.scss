@@ -1,0 +1,93 @@
+@import "../../style/mixins.scss";
+@import "../../style/variable.scss";
+.viewmorepop {
+ 
+  .ant-modal-close:hover {
+    background: transparent;
+  }
+  .ant-modal-close-x {
+    .anticon svg {
+      display: none;
+    }
+  }
+  .anticon svg:hover {
+    background-color: $white;
+  }
+  .ant-modal-content {
+    padding: 0;
+  }
+  .ant-modal-body {
+    font-size: 19px;
+    line-height: 1.5714285714285714;
+    word-wrap: break-word;
+  }
+  .inner-layer {
+    background-color: $white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+
+    .list-of-attendies {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      color:$black;
+      height: 42vh;
+      overflow-y: scroll;
+      .attendy {
+        display: flex;
+        padding-left: 40px;
+        font-size: large;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    header {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        width: 320px;
+        gap: 10px;
+        .view-header {
+          border-bottom: 3px solid $clickEvent-color;
+        }
+        .view-nonheader {
+          cursor: pointer;
+        }
+      }
+    }
+    .agenda {
+      width: 100%;
+      text-align: justify;
+      .agenda-des {
+        text-align: justify;
+        line-height: 30px;
+        padding: 0px 30px;
+        height: 43vh;
+        overflow-y: scroll;
+      }
+    }
+    .summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 37vh;
+      padding: 0px 30px;
+      label {
+        display: flex;
+        justify-content: space-between;
+        span {
+          width: 170px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

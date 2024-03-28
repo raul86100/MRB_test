@@ -1,0 +1,32 @@
+@import '../../style/variable.scss';
+
+.activityheader{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color:$white;
+    border-radius: 20px;
+    font-size: larger;
+    max-width: fit-content;
+    .blue{
+        background-color: $clickEvent-color;
+        padding: 10px 25px 10px 25px;
+        color: $white;
+        border-radius: 20px;
+    }
+   .nonblue{
+        padding: 10px 25px 10px 25px;
+    }
+    li{
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    .activityheader{
+        font-size:medium;
+    }
+    
+}
+

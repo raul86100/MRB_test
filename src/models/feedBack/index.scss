@@ -1,0 +1,13 @@
+.user-feedback{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+    .yellow {
+        fill: #ffd700;
+        cursor: pointer;
+      }
+      .non-yellow {
+        fill: rgba($color: #000000, $alpha: 10%);
+        cursor: pointer;
+      } 
+}

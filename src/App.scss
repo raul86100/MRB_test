@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+
+@media  screen and (max-width:1000px) {
+  *{
+    font-size: medium;
+  }
+}
+@media screen and (max-width:475px) {
+  *{
+    font-size: small;
+  }
+}

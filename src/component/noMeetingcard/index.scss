@@ -1,0 +1,12 @@
+@import '../../style/variable.scss';
+.no-meeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:$lightblack;
+    align-items: center;
+    }
+.no-meeting-icon{
+    font-size: 8rem;
+  }
+

@@ -1,0 +1,30 @@
+.requests-page {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 25px 50px;
+min-height: 100vh;
+
+  .requests-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .day-time{ 
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .no-requestdata{
+    height: 80vh;
+    display: flex;
+    align-items: center;  }
+}
+.anti-pagination{
+    position:absolute;
+    bottom: 0px;
+    
+
+}

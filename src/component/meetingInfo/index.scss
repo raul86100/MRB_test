@@ -1,0 +1,40 @@
+@import '../../style/variable.scss';
+
+.meetingInfo-container {
+  background-color: $background-Color;
+}
+.shade-meetingInfo-container {
+  background-color: $shade-Color;
+}
+
+.meetingInfo-container,
+.shade-meetingInfo-container {
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  min-width: 600px;
+  padding: 35px 15px;
+  .meetingInfo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .meetingInfo-container,
+  .shade-meetingInfo-container {
+    min-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .meetingInfo-container,
+  .shade-meetingInfo-container {
+    min-width: 320px;
+  }
+}

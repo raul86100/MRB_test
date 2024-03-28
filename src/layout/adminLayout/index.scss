@@ -1,0 +1,11 @@
+@import "../../style/variable.scss";
+
+.adminsidebar {
+  display: flex;
+
+  .adminoutlet {
+    width: calc(100% - 235px);
+    background-color: $backgroundColor;
+  
+  }
+}

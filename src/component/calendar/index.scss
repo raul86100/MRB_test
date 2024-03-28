@@ -1,0 +1,75 @@
+@import "../../style/variable.scss";
+
+.callayout{
+    background-color:$white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+
+
+    .month{
+        font-size: xx-large;
+    }
+
+table{
+    border-spacing: 20px;
+    font-size: larger;
+    width: 100%;
+    tr{
+        align-items: center;
+        height: 30px;
+        cursor: pointer;
+        td{
+         width: 10px;
+          padding: 0px;
+
+        }
+    }
+
+    .blue{
+        background-color:$clickEvent-color;
+        color: $white;
+        text-align: center;
+        border-radius: 9px;
+        border: 2px solid #5473E3;
+
+      
+
+    }
+    .nonblue{
+        text-align: center;
+        border: 2px solid $white;
+    }
+    .today{
+    border: 2px solid $clickEvent-color;
+    color: $black;
+    text-align: center;
+    border-radius: 9px;
+    box-sizing: border-box;
+
+    }
+}
+.callayout{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    align-items: center;
+}
+.month_design{
+    font-family: "Kalnia", serif;
+    color: $white;
+    font-size: 46px;
+}
+}
+
+@media only screen and (max-width:1480px) {
+    .callayout{
+        table{
+            border-spacing:10px;
+        }
+    }  
+
+}
+

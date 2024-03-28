@@ -1,0 +1,40 @@
+@import '../../style/variable.scss';
+.unseencard {
+  background-color:$unseenbackground-Color;
+  cursor: pointer;
+}
+.info-card {
+  background-color:$white;
+  cursor: pointer;
+}
+.info-card,
+.unseencard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 15px;
+  gap: 10px;
+  .name-details {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: larger;
+    align-items: center;
+    h4 {
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .avatar {
+      font-size: 2rem;
+    }
+  }
+  .short-des {
+    text-indent: 10px;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

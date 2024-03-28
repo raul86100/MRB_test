@@ -1,0 +1,91 @@
+@import '../../../style/variable.scss';
+.adminActivity {
+  padding: 30px 30px 0px 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ant-pagination {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .history {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    width: 100%;
+    gap: 1rem;
+    .history-row2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      .table {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        table {
+          border-collapse: separate;
+          border-spacing: 0px 10px;
+          thead {
+            td {
+              font-size: large;
+            }
+          }
+
+          tr {
+            background-color:$white;
+            border-radius: 10px;
+            td {
+              padding: 25px 5px;
+              text-align: center;
+              min-width: 230px;
+              max-width: 230px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              .eye-btn {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .history-chart {
+        width: 300px;
+      }
+    }
+    .history-nomeeting {
+      height: 70vh;
+    }
+  }
+  .upcoming-admin {
+    width: 100%;
+    padding: 12px 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 40px;
+    .upcoming-row1 {
+      text-align: end;
+    }
+    footer {
+      text-align: center;
+    }
+    .meeting {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: 70vh;
+    }
+    .nomeeting {
+      justify-content: center;
+    }
+  }
+}

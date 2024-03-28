@@ -1,0 +1,14 @@
+@import '../../style/variable.scss';
+.time{
+.currentTime{
+    font-size: 18px;
+    margin: 10px;
+}    
+.currentDay{
+    color:$currentDay-Color;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+}

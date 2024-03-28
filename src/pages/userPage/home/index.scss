@@ -1,0 +1,188 @@
+@import '../../../style/variable.scss';
+.homePage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  
+  .row-1{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .row-2{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    padding: 0% 5%;
+    width: 100%;
+    .row-2-text{  
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .greeting{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap:0.5rem;
+      h1{
+        color: lightslategrey;
+      }
+    
+    }
+    .slogan{
+      font-size: larger;
+      max-width: 500px;
+      color:gray;
+      padding-top: 1rem;
+    }
+    .auther{
+      text-align: right;
+    
+    }
+    }
+  }
+  .row-3{
+    display: flex;
+    justify-content:space-between;
+    padding: 0% 5%;    
+    width:100%;
+    gap:10px;
+    .row-3-calendar{
+      max-width: 500px;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 10px;
+
+    }
+    .date-label{
+      font-size: x-large;
+      .myday{
+        color:$lightblack;
+      }
+    }
+   .empty-meeting-list{
+justify-content: center;
+
+   }
+    .meeting-list{
+    width: 700px;
+      display: flex;
+      flex-direction: column;
+      height: calc(60px * 6);
+      align-items: center;
+      
+      
+    }
+    .view-more{
+      color:$clickEvent-color;
+      font-size: large;
+      cursor: pointer;
+    }
+  }
+}
+.userModal-Info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0px 10px;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 500px;
+}
+.slick-dots {
+  position: absolute;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  z-index: 15;
+  display: flex!important;
+  justify-content: center;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+  visibility: hidden;
+}
+.ant-carousel{
+  padding-top: 1rem;
+}
+
+
+@media only screen and (max-width:1380px) {
+  .homePage-container{
+    .row-3{
+      font-size:small;
+       .meeting-list{
+        width: 600px;
+       }
+    }
+  }
+  
+}
+@media only screen and (max-width:1230px) {
+  .homePage-container{
+    .row-1{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width:1000px){
+  .homePage-container{
+    .row-3{
+      font-size:small;
+       .meeting-list{
+        width: 500px;
+       }
+    }
+  }
+
+}
+@media only screen and (max-width:900px){
+  .homePage-container{
+    padding: 5px;
+    .row-2{
+      justify-content:flex-start;
+      .meeting-img{
+        display: none;
+      }
+    }
+    .row-3{
+      flex-direction: column;
+      align-items: center;
+      .row-3-calendar{
+        max-width: 390px;
+      }
+     
+
+    }
+  }
+
+}
+
+
+@media only screen and (max-width:500px) {
+  .homePage-container{
+    .row-2{
+      .slick-list{
+        width: 320px;
+      }
+    }
+    .row-3{
+      .meeting-list{
+        width: 320px;
+       }
+     
+
+    }
+  }
+  
+}

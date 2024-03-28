@@ -1,0 +1,110 @@
+@import "../../style/variable.scss";
+
+.roomcard-outer {
+width: 100%;
+display: flex;
+justify-content: center;
+.roomcard-layout {
+background-color: $white;
+display: flex;
+flex-direction: column;
+min-width: 380px;
+border-radius: 10px;
+.dots-menu {
+position:relative;
+left:21rem;
+bottom:12rem;
+font-size: larger;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+}
+.dots-icon {
+font-size: larger;
+cursor: pointer;
+color:#5476e5;
+font-weight: 600;
+}
+
+.unblock {
+width:9rem;
+background-color:$white;
+text-align: center;
+height: fit-content;
+font-size: medium;
+color: $black;
+position: absolute;
+top: 30px; 
+right:15px; 
+padding:5px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+ .unblock:hover{
+    background-color:$clickEvent-color;
+    color:$white;
+   }
+     button {
+       cursor: pointer;
+       color: $white;
+       border: none;
+       background:$clickEvent-color;
+       padding: 12px 0px;
+       border-radius: 3px;
+      font-size:medium;
+       }
+    section {
+       padding: 0px 16px;
+       height: 200px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+     footer{ 
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      justify-content: flex-start;
+     }
+}
+.row-1 {
+   width:380px;
+   height:200px;
+   object-fit: cover;
+   border-radius:10px 10px 55px 0px ;
+}
+.row-2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  .capacity-label{
+     display: flex;
+     gap:4px
+   }
+   .viewslotbutton {
+    cursor: pointer;
+    border: none;
+    background: $white;
+    color: $clickEvent-color;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+  }
+  .idquantity {
+      display: flex;
+      flex-direction: column;
+      height: 75px;
+      justify-content: space-around;
+      font-size:20px;
+}
+}
+}
+}
+
+
+
+
+  

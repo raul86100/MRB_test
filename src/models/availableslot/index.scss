@@ -1,0 +1,59 @@
+@import '../../style/variable.scss';
+.loadingavailable{
+  position: fixed;
+  width:fit-content;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  .loadingsection{
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 8px solid $clickEvent-color;
+  border-bottom: 8px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+}
+
+.Table {
+    width: 92%;
+    border-collapse: collapse;
+  }
+  .unavailable{
+    color:$red-color;
+  } 
+  .roomname{
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+  }
+  .Table th,
+  .Table td {
+    border:none;
+    padding: 1rem;
+    width: 200px;
+    font-size: medium;
+    text-align: center;
+  }
+  .Table th{
+    background-color:$shade-Color;
+    font-size: medium;
+    font-size: larger;
+  }
+
+
+@keyframes spin {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+  
+}

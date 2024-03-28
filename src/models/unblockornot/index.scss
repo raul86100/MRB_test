@@ -1,0 +1,47 @@
+@import '../../style/variable.scss';
+.unblockornot_container{
+    h1{
+        align-self: center;
+    }
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    .unblockornot_content{
+        align-self: center;
+        justify-self: center;
+        height: 60%;
+        font-size:0.9rem;
+        overflow-y: auto;
+        .unblockornot_data{
+            padding-bottom:1rem;
+        }
+    }
+    .yesorno_button{
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap:4rem;
+        position: absolute;
+        bottom: 2rem;
+        .yesbutton{
+            border: none;
+            background-color:$clickEvent-color;
+            color: $white;
+            font-size:1.1rem;
+            padding:0.5rem;
+            width:6rem;
+            text-align: center;
+        }
+        .nobutton{
+            border: none;
+            background-color:$red-color;
+            font-size:1.1rem;
+            color: $white;
+            padding:0.5rem;
+            width:6rem;
+            text-align: center;
+        }
+    }
+}

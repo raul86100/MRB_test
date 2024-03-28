@@ -1,0 +1,37 @@
+@import "../../../style/variable.scss";
+.accept-btn{
+    color:$clickEvent-color;
+   background: white;
+   border: 1px solid $clickEvent-color;
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.accept-btn:hover{
+    background:$clickEvent-color ;
+    color:white;
+}
+.reject-btn{
+   color: #ff4d4f;
+   background: white;
+   border: 1px solid #ff4d4f;
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.reject-btn:hover{
+    background:#ff4d4f ;
+    color:white;
+}
+
+@media only screen and (max-width:480px) {
+.reject-btn,.accept-btn{
+    font-size: small;
+    padding: 4px 7px;
+    height: 28px;
+}    
+}

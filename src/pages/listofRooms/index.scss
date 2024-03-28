@@ -1,0 +1,15 @@
+.room-r1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    }
+    .room-r3{
+    height:90vh;
+    width: 100%;
+    overflow-y:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    row-gap:3rem;                     ; 
+    }
+ 

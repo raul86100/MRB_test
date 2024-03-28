@@ -1,0 +1,124 @@
+@import "../../style/variable.scss";
+
+.activity-card-layout{
+  padding: 30px 20px 30px 20px;
+}
+.activity-history-card{
+  padding: 30px 20px 10px 20px; 
+}
+.activity-card-layout, .activity-history-card{
+  width: 100%;
+  background-color:$white;
+  border-radius: 10px;
+.acitivity-card {
+  
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  
+  .meeting-name {
+    width: 225px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .host {
+    width: 150px;
+    justify-content: flex-start;
+  }
+
+  .card-click {
+    color: $clickEvent-color;
+    cursor: pointer;
+  }
+  .positive {
+    color:$green-color;
+    width: 118px;
+    font-size: medium;
+  }
+  .negative {
+    color:$red-color;
+    width: 118px;
+    font-size: medium;
+  }
+}
+@media only screen and (max-width:830px) {
+  .acitivity-card{
+  
+    gap:5px;
+   .meeting-name{
+    width: 150px;
+    word-break: break-all;
+     
+   }
+    .card-click{
+      p{
+        display: none;
+      }
+      span{
+        display: none;
+      }
+    }
+    .positive {
+    width: 80px;
+    font-size:small;
+    }
+    .negative {
+      width: 80px;
+      font-size:small;
+    }
+    .host{
+      width:50px;
+      white-space:nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+}
+
+.feedback-text{
+  color:$clickEvent-color;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:10px;
+  cursor: pointer;
+}
+
+}
+@media only screen and (max-width:475px) {
+  .activity-card-layout, .activity-history-card {
+    padding: 5px;
+  .acitivity-card{
+
+    .meeting-name{
+      width: 70px;
+      
+     }
+    .indicator{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 93px;
+      white-space:nowrap;
+     span{
+        display:none;
+      }
+    }
+    .host{
+      display: none;
+    }
+    .positive,.negative{
+      width: 75px;
+    }
+
+  }
+  
+}}

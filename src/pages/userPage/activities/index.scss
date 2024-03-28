@@ -1,0 +1,59 @@
+@import '../../../style/variable.scss';
+.activitypage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:100vh;
+  padding: 30px 30px 0px 30px;
+  justify-content: space-between;
+  .activivty-row2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 0px 40px;
+    select {
+      padding: 0.2rem;
+      border-color:$lightgrey;
+      background-color: $white;
+      border-radius: 5px;
+      outline: none;
+      width: 100px;
+      font-size: large;
+      color: rgba(0, 0, 0, 75%);
+      
+    
+    }
+   
+    section {
+      display: flex;
+      gap: 5px;
+
+    }
+  }
+
+  .activity-row3 {
+    padding: 20px 40px;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .new-activity-row3{
+    justify-content: center;
+  }
+}
+.ant-pagination{
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width:500px) {
+  .activitypage{ .activity-row3{
+ padding:0px;
+  }}
+  
+}

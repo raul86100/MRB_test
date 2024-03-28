@@ -1,0 +1,53 @@
+@import '../../style/variable.scss';
+.roomname{
+   margin-bottom: 1rem;
+}
+.unblock-container{
+    height: 20rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    .notselected{  
+        text-align: center;
+        background-color:$shade-Color;
+        padding:1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+    .selected{
+        text-align: center;
+        background-color:$clickEvent-color;
+        color: $white;
+        padding:1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+  
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .closebuttonstyle{
+        cursor:pointer;
+        background-color:$clickEvent-color ;
+        padding:1rem;
+        width:7rem;
+        height:3rem;
+        text-align:center;
+        color:$white;
+        border: none;
+    }
+    .closebuttonstyle_disable{
+        cursor: not-allowed;
+        color: $disablebutton-Color;
+        background:$disablebuttonbackground-Color;
+        padding:1rem;
+        width:7rem;
+        height:3rem;
+        border: none;
+    }
+}
+
+

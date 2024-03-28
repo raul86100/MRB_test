@@ -1,0 +1,44 @@
+@import '../../style/variable.scss';
+.userMeeting-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $lightblack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .userMeeting-Modal {
+    background: $white;
+    padding: 27px;
+    width: 670px;
+    height: 500px;
+    border-radius: 8px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    .userMeeting-close {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+    }
+    .userMeeting-date {
+      display: flex;
+      gap: 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: x-large;
+      align-self: flex-start;
+      color:$lightblack;
+      
+    }
+    .meeting-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  }
+}

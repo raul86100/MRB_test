@@ -1,0 +1,147 @@
+@import "../../../style//variable.scss";
+@import "../../../style/mixins.scss";
+.adminHome {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $backgroundColor;
+  height: fit-content;
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 100%;
+    p {
+      font-size: 25px;
+    }
+  }
+
+  .wholeBlock {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(500px, 510px));
+    padding: 2rem 3rem 0;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 10px 10px 10px;
+    .feedbackCard {
+      padding: 12px;
+      @include adminHomeCardStyle;
+
+      .feedbackCardHeader {
+        @include adminHomeArrowStyle;
+        .arrowpointer{
+          cursor: pointer;
+        }
+      }
+
+      .items {
+        font-size: 12px;
+        margin-top: 7px;
+        padding: 11px;
+        box-shadow: 0 0 2px rgba(114, 106, 106, 0.5);
+      }
+      .listoffeedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 8px;
+      }
+      .nomeetingFeedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    .timeCard {
+      display: flex;
+      justify-content: center;
+      height: 7rem;
+      padding: 12px;
+      align-items: center;
+      @include adminHomeCardStyle;
+    }
+    .activitiesCard {
+      margin-top: 10px;
+      @include adminHomeCardStyle;
+
+      .header {
+        @include adminHomeArrowStyle;
+        width: 100%;
+        height: 10%;
+        .arrowpointer{
+          cursor: pointer;
+        }
+      }
+      .activityBody {
+        display: flex;
+        justify-content: center;
+        background-color: $white;
+        border-radius: 5%;
+        width: 100%;
+
+        .chartContainer {
+          width: 70%;
+        }
+      }
+    }
+    .SchudulerCard {
+      @include adminHomeCardStyle;
+      width: fit-content;
+      .SchulerHeader {
+        @include adminHomeArrowStyle;
+        .arrowpointer{
+          cursor: pointer;
+        }
+      }
+    }
+    .meetingCard {
+      margin-top: 10px;
+      padding: 12px;
+
+      @include adminHomeCardStyle;
+
+      .meetingHeader {
+        margin-bottom: 15px;
+        color: rgba(0, 0, 0, 70%);
+        font-size: larger;
+      }
+      .meeting-container {
+        display: flex;
+        height: 228px;
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+      .meetingItems {
+        font-size: 14px;
+        margin-top: 8px;
+        padding: 11px;
+        box-shadow: 0 0 2px rgba(114, 106, 106, 0.5);
+        width: 100%;
+        background-color:$lightgrey;
+      }
+      .noMeetingContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .meetingImageContainer {
+          width: 12rem;
+          text-align: center;
+          .meetingImage {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.meeting-container::-webkit-scrollbar {
+  background-color: transparent;
+}
