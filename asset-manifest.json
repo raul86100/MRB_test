@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MRB_test/static/css/main.05b825b5.css",
+    "main.js": "/MRB_test/static/js/main.d3da5d4c.js",
+    "static/js/453.2bcbb01e.chunk.js": "/MRB_test/static/js/453.2bcbb01e.chunk.js",
+    "static/media/image (2).png": "/MRB_test/static/media/image (2).ad54e0e01248a3aec1c3.png",
+    "static/media/nodatafound.jpg": "/MRB_test/static/media/nodatafound.b7702001301ab14edc41.jpg",
+    "static/media/homePage-meeting-image.png": "/MRB_test/static/media/homePage-meeting-image.c28205b7f05e882d6905.png",
+    "static/media/meetingImage.jpg": "/MRB_test/static/media/meetingImage.28997b4863f3e6bf4160.jpg",
+    "static/media/sucess.png": "/MRB_test/static/media/sucess.26778ed748f8de14733c.png",
+    "static/media/failure.png": "/MRB_test/static/media/failure.aed6353de605706cc729.png",
+    "static/media/Divum LOGO 2022.svg": "/MRB_test/static/media/Divum LOGO 2022.31419039ba5dd8c8766adb03d077bc31.svg",
+    "index.html": "/MRB_test/index.html",
+    "main.05b825b5.css.map": "/MRB_test/static/css/main.05b825b5.css.map",
+    "main.d3da5d4c.js.map": "/MRB_test/static/js/main.d3da5d4c.js.map",
+    "453.2bcbb01e.chunk.js.map": "/MRB_test/static/js/453.2bcbb01e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05b825b5.css",
+    "static/js/main.d3da5d4c.js"
+  ]
+}
