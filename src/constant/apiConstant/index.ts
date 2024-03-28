@@ -1,5 +1,5 @@
 export const api = {
-  homeurl: "http://localhost:3000",
+  homeurl: "https://ragul86100.git.io/MRB_test",
 
   baseurl: "http://192.168.1.156:8080/v1/api/",
   adminActivityHistory: "admin/meeting/history",
